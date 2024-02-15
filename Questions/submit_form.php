@@ -25,8 +25,8 @@ $stmt->bind_param("ssss", $name, $surname, $sub, $message);
 $stmt->execute();
 
 // Wysyłanie wiadomości do bota Telegram
-$telegramToken = '6811292001:AAHywz_KkzwcJWL51ReggWZUs81YRf3dyHg';
-$chatId = '735456880'; // Możesz zdobyć chat ID, pisząc wiadomość do @userinfobot na Telegramie
+$telegramToken = '';
+$chatId = ''; // Możesz zdobyć chat ID, pisząc wiadomość do @userinfobot na Telegramie
 $telegramMessage = "Nowy formularz kontaktowy:\nImię: $name\nNazwisko: $surname\nTemat: $sub\nWiadomość: $message";
 
 $telegramApiUrl = "https://api.telegram.org/bot$telegramToken/sendMessage";
